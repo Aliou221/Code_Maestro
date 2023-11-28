@@ -1,0 +1,110 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    background-color: #fff;
+}
+.contact h1{
+    font-family: 'Barlow', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.contact hr{
+    background-color: gray;
+    height: 3px;
+    margin-block: 24px;
+    width: 50%;
+}
+.contact p{
+    font-size: 15px;
+    font-weight: 400;
+}
+form{
+    padding-block: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 40px;
+}
+.name,.mail{
+    display: flex;
+    flex-direction: column;
+
+}
+.name label, .mail label{
+    font-family: 'Barlow',sans-serif;
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 13px;
+    padding-left: 5px;
+    font-weight: 500;
+}
+.name input, .mail input{
+    padding: 10px;
+    border-radius: 0 10px;
+    width: 298px;
+    height: 50px;
+    outline: none;
+    border: 2px solid gray;
+}
+.name input:hover, .mail input:hover{
+    box-shadow: 2px 3px 6px 2px black;
+}
+#button{
+    cursor: pointer;
+    width: 80px;
+    font-weight: 500;
+    font-family: 'Barlow',sans-serif;
+    margin: 35px 0 0 0;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    background-color: orangered;
+    color: #fff;
+}
+#button:hover{
+   background-color: #333;
+   transition: .5s ease;
+}
+footer{
+    background-color: #333;
+    padding: 2%;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .logo{
+    color: #fff;
+}
+footer p{
+    font-weight: 400;
+    color: gray;
+    margin-top: 15px;
+    font-size: 13px;
+}
+@media (max-width:800px){
+    form{
+        display: grid;
+        gap: 25px;
+    }
+    #button {
+        margin: 0;
+    }
+}
+@media (max-width:500px){
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="./styles/style1.css">
+        <link rel="stylesheet" href="./styles/style2.css">
+        <link rel="stylesheet" href="./styles/style3.css">
+        <link rel="stylesheet" href="./styles/header.css">
+        <link rel="stylesheet" href="./styles/menu.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Travel Agency</title>
+    </head>
+    <body>
+        <header>
+           <div class="navbar">
+                <h1 class="logo">Travel Agency<span class="orange">.</span></h1>
+                <nav>
+                    <a href="#">Accueil</a>
+                    <a href="#destinations">Destinations</a>
+                    <a href="#circuits">Circuits</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <span id="menu-burger">&#9776;</span>
+           </div>
+                <div id="nav">
+                    <a href="#">Accueil</a>
+                    <a href="#destinations">Destinations</a>
+                    <a href="#circuits">Circuits</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+            <div class="contain">
+                <h1>Organisez votre<br><span>voyages sur mesure</span></h1>
+            </div>
+            <a href="#destinations"><button id="btn">Par ici</button></a>
+        </header>
+        <section class="section1" id="destinations">
+            <div class="boite">
+                <div class="img">
+                    <img src="./media/icon1.png" alt="planifier">
+                </div>
+                <h2>planifier</h2>
+                <p>Confiez-nous vos rêves d'évasion : en famille ou entre amis, nous trouverons la formule qui comblera vos attentes.</p>
+            </div>
+            <div class="boite">
+                <div class="img">
+                    <img src="./media/icon2.png" alt="planifier">
+                </div>
+                <h2>organiser</h2>
+                <p>Bénéficiez de l'expertise de nos spécialistes de chaque destination, ils vous accompagnent dans la réalisation de votre voyage.</p>
+            </div>
+            <div class="boite">
+                <div class="img">
+                    <img src="./media/icon3.png" alt="planifier">
+                </div>
+                <h2>voyager</h2>
+                <p>Nous nous chargeons d'assurer votre sécurité et de veiller à votre pleine sérénité tout au long de votre voyage.</p>
+            </div>
+        </section>
+        <section class="section2" id="circuits">
+            <div class="boite1">
+                <div class="main">
+                    <h2>partez en famille</h2>
+                    <hr>
+                    <p><i>Offrez le meilleur à ceux que vous aimez et partagez des moments fabuleux !</i></p>
+                    <button class="btn1">Plus d'infos</button>
+                </div>
+            </div>
+            <div class="boite2">
+                <div class="main">
+                    <h2>envie de s'evader</h2>
+                    <hr>
+                    <p><i>Parfois un peu d'évasion serait le bienvenue et ferait le plus grand bien !</i></p>
+                    <button class="btn1">Plus d'infos</button>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h1>contactez-nous</h1>
+            <hr>
+            <p>Chez Travel Agency nous savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+            <form>
+                <div class="name">
+                    <label for="fullname">Nom et Prénom (s):</label>
+                    <input type="text" id="fullname" placeholder="Votre nom" required>
+                </div>
+                <div class="mail">
+                    <label for="eimailinput">Email:</label>
+                    <input type="email" id="eimailinput" placeholder="Votre email" required>
+                </div>
+               <div>
+                <input type="button" value="OK" id="button">
+               </div>
+            </form>
+        </section>
+        <footer>
+            <h1 class="logo">Travel Agency<span class="orange">.</span></h1>
+            <p>Copyright © 2023. Tous droits réservés.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

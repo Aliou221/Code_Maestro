@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../media/background1.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+}
+.navbar{
+    padding: 20px;
+    height: 70px;
+    background-color: #f5f6f7;
+    background-attachment: fixed;
+    width: 100%;
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: #333;
+    font-weight: bold;
+    font-family: "roboto slab", sans-serif;
+    font-size: calc(1.2rem + 1.5vw);
+    cursor: default;
+}
+.orange{
+    color: orange;
+    font-size: 40px;
+    font-weight: bold;
+}
+nav{
+    margin-right: 2%;
+    margin-top: 10px;
+}
+nav a{
+    position: relative;
+    color: gray;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: 500;
+}
+nav a::before,#nav a::before{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    top: 100%;
+    height: 2px;
+    width: 0;
+    left: 0;
+    transition: .5s ease;
+}
+nav a:hover::before,#nav a:hover::before{
+    width: 100%;
+}
+nav a:hover,#nav a:hover{
+    color: #000;
+    transition: .5s ease;
+}
+#nav{
+    display: none;
+}
+#nav a{
+    position: relative;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.contain h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Barlow',sans-serif;
+}
+#btn{
+    width: 90px;
+    height: 45px;
+    color: #fff;
+    background-color: orangered;
+    padding: 10px;
+    margin-block: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: #000;
+    transition: .3s ease;
+}
+@media (max-width:660px){
+    .contain h1{
+        font-size: 40px;
+    }
+}
